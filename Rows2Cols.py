@@ -1,6 +1,6 @@
 def rowstocols(df, key, value, join_how='outer'):
-    """Casts the input data frame into a tibble,
-    given the key column and value column.
+    """Given a dataframe, transform rows to 
+        columns
     """
     assert type(df) is pd.DataFrame
     assert key in df.columns and value in df.columns
